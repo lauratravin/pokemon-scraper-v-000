@@ -28,7 +28,7 @@ class Pokemon
     array1 = db.execute("SELECT * FROM pokemon").flatten
     id = self.id
     val = 1
-    result = db.execute("UPDATE Pokemon SET hp = \"#{val}" WHERE id = ?",id).flatten
+    result = db.execute("UPDATE Pokemon SET hp = \"#{val}\" WHERE id = ?",id).flatten
   end
 
 
