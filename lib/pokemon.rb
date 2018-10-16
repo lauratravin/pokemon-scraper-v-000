@@ -27,8 +27,8 @@ class Pokemon
     binding.pry
     array1 = db.execute("SELECT i* FROM pokemon).flatten
     id = self.id
-     
-    db.execute("UPDATE Pokemon SET hp = #{val} WHERE id = ?",id).flatten
+
+    db.execute("UPDATE Pokemon SET hp = "#{val}" WHERE id = ?",id).flatten
   end
 
 
