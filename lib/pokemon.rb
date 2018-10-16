@@ -15,7 +15,7 @@ class Pokemon
     ins = db.prepare("INSERT INTO pokemon (name,type) VALUES (?, ?)")
     ins.execute(name,type)
 
-  #  ins = db.execute.("INSERT INTO pokemon (name,type) VALUES (?, ?)", name, type)
+  #  ins = db.execute.("INSERT INTO pokemon (name,type) VALUES (?, ?)", name, type) is the same that above.
   end
 
   def self.find(id,db)
@@ -24,8 +24,9 @@ class Pokemon
   end
 
   def alter_hp(val,db)
-
+    binding.pry
     id = self.id
+     array1 = db.execute("SELECT i* FROM pokemon).flatten
     db.execute("UPDATE Pokemon SET hp = #{val} WHERE id = ?",id).flatten
   end
 
