@@ -30,7 +30,8 @@ class Pokemon
     # array1 = db.execute("SELECT * FROM pokemon").flatten
     id = self.id
 
-    result = db.execute("UPDATE Pokemon SET hp = \"#{val}\" WHERE id = ?",id).flatten
+    # result = db.execute("UPDATE Pokemon SET hp = \"#{val}\" WHERE id = ?",id).flatten
+    result = db.execute("UPDATE Pokemon SET hp = ? WHERE id = ?",val,id).flatten
   end
 
 
