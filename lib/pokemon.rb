@@ -25,8 +25,9 @@ class Pokemon
 
   def alter_hp(val,db)
     binding.pry
+    array1 = db.execute("SELECT i* FROM pokemon).flatten
     id = self.id
-     array1 = db.execute("SELECT i* FROM pokemon).flatten
+     
     db.execute("UPDATE Pokemon SET hp = #{val} WHERE id = ?",id).flatten
   end
 
