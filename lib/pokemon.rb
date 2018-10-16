@@ -4,7 +4,7 @@ class Pokemon
   attr_accessor :db,:name,:type,:id,:hp
 
   @@all = []
-  def initialize (id:,name:,type:,db:,hp:)   #key argument. Decent explanation here https://medium.com/@tyler_brewer2/utilizing-ruby-keyword-arguments-462ba8366483
+  def initialize (id:,name:,type:,db:,hp: 60)   #key argument. Decent explanation here https://medium.com/@tyler_brewer2/utilizing-ruby-keyword-arguments-462ba8366483
     @id = id
     @name = name
     @type = type
