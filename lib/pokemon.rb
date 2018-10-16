@@ -24,7 +24,7 @@ class Pokemon
   end
 
   def alter_hp(val,db)
-    # binding.pry
+     binding.pry
     # array1 = db.execute("SELECT * FROM pokemon").flatten
     id = self.id
     # val = 1
