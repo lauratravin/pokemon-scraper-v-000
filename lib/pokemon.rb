@@ -1,7 +1,7 @@
 require "pry"
 class Pokemon
 
-  attr_accessor :db,:name,:type,:id
+  attr_accessor :db,:name,:type,:id,:hp
 
   @@all = []
   def initialize (id:,name:,type:,db:)   #key argument. Decent explanation here https://medium.com/@tyler_brewer2/utilizing-ruby-keyword-arguments-462ba8366483
